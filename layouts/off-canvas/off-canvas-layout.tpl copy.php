@@ -1,12 +1,5 @@
 <div<?php print $attributes; ?>>
   <header class="l-header" role="banner">
-
-    <div id="off-canvas" class="l-off-canvas">
-      <a id="off-canvas-show" href="#off-canvas" class="l-off-canvas-show"><?php print t('Show Navigation'); ?></a>
-      <a id="off-canvas-hide" href="#" class="l-off-canvas-hide"><?php print t('Hide Navigation'); ?></a>
-      <?php print render($page['navigation']); ?>
-    </div>
-    
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -29,7 +22,11 @@
 
     <?php print render($page['header']); ?>
 
-
+    <div id="off-canvas" class="l-off-canvas">
+      <a id="off-canvas-show" href="#off-canvas" class="l-off-canvas-show"><?php print t('Show Navigation'); ?></a>
+      <a id="off-canvas-hide" href="#" class="l-off-canvas-hide"><?php print t('Hide Navigation'); ?></a>
+      <?php print render($page['navigation']); ?>
+    </div>
   </header>
 
   <div class="l-main">

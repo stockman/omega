@@ -35,6 +35,7 @@ $desk: 70em;
   margin-bottom: $vert-spacing-unit;
 }
 
+
 .l-off-canvas {
   clear: both;
 }
@@ -47,6 +48,8 @@ $desk: 70em;
   .l-footer {
     @include set-container-width;
   }
+.l-header {background-color: green /* !important; */
+} 
 
   .l-branding {
     @include span-columns(4, 12);
