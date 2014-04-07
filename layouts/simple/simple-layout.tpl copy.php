@@ -1,6 +1,5 @@
 <div<?php print $attributes; ?>>
   <header class="l-header" role="banner">
-   <?php print render($page['navigation']); ?>
     <div class="l-branding">
 
       <?php  if ($logo): ?>
@@ -23,7 +22,7 @@
     </div>
 
     <?php print render($page['header']); ?>
-
+    <?php print render($page['navigation']); ?>
   </header>
 
   <div class="l-main">
