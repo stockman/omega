@@ -16,3 +16,11 @@ regions[footer]         = Footer
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/simple/simple.layout.css
+stylesheets[all][] = css/component.css
+stylesheets[all][] = css/default.css
+; this css is getting added successfully but I can't get the js to work?
+; maybe it is because you have not adjusted the js to pickup the current menus
+
+; Scripts
+scripts[] = js/jquery.dlmenu.js
+scripts[] = js/modernizr.custom.js
