@@ -22,5 +22,4 @@ stylesheets[all][] = css/default.css
 ; maybe it is because you have not adjusted the js to pickup the current menus
 
 ; Scripts
-scripts[] = js/jquery.dlmenu.js
-scripts[] = js/modernizr.custom.js
+scripts[] = js/Rand.js

@@ -1,3 +1,5 @@
+
+<!-- the real stuff is here-->
 <div<?php print $attributes; ?>>
   <header class="l-header" role="banner">
    <?php print render($page['navigation']); ?>
@@ -54,3 +56,4 @@
     <?php print render($page['footer']); ?>
   </footer>
 </div>
+
