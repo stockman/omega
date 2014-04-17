@@ -3,24 +3,24 @@
         attach: function(context, settings) {
             //code starts
             // for the user profiles
-            $("#block-user-login").addClass("js").before('<div id="pmenu">⍜</div>');
+            $(".profiler").addClass("js").before('<div id="pmenu">⍜</div>');
             // can you make this wrap? .after('</div>');
             $("#pmenu").click(function() {
-                $("#block-user-login").toggle();
+                $(".profiler").toggle();
             });
             $(window).resize(function() {
                 if (window.innerWidth > 1768) {
-                    $("#block-user-login").removeAttr("style");
+                    $(".profiler").removeAttr("style");
                 }
             });
             // for the about tab
-            $("#block-menu-menu-about").addClass("js").before('<div id="imenu">ï</div>');
+            $(".abouter").addClass("js").before('<div id="imenu">ï</div>');
             $("#imenu").click(function() {
-                $("#block-menu-menu-about").toggle();
+                $(".abouter").toggle();
             });
             $(window).resize(function() {
                 if (window.innerWidth > 1768) {
-                    $("#block-menu-menu-about").removeAttr("style");
+                    $(".abouter").removeAttr("style");
                 }
             });
             //code ends
