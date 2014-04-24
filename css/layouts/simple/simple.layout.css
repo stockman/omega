@@ -4,7 +4,7 @@
  * Styling of the "simple" layout demonstrating the Compass grid extension Susy
  * and building mobile first layouts.
  ******************************************************************************/
-.l-header,
+/*.l-header,
 .l-main,
 .l-footer {
   *zoom: 1;
@@ -16,6 +16,7 @@
   margin-right: auto;
   margin-bottom: 20px;
 }
+*/
 .l-header:after,
 .l-main:after,
 .l-footer:after {
@@ -81,7 +82,7 @@
   .l-header,
   .l-main,
   .l-footer {
-    max-width: 1190px;
+    max-width: 100%;
   }
 
   .l-branding {
