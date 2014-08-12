@@ -303,20 +303,6 @@ function omega_js_alter(&$js) {
     drupal_static_reset('element_info');
   }
 
-  // If the AJAX.js isn't included... we don't need the ajaxPageState settings!
-  if (!isset($js['misc/ajax.js']) && isset($js['settings']['data'])) {
-    foreach ($js['settings']['data'] as $delta => $setting) {
-      if (array_key_exists('ajaxPageState', $setting)) {
-        if (count($setting) == 1) {
-          unset($js['settings']['data'][$delta]);
-        }
-        else {
-          unset($js['settings']['data'][$delta]['ajaxPageState']);
-        }
-      }
-    }
-  }
-
   if (!omega_extension_enabled('assets')) {
     return;
   }
@@ -347,6 +333,9 @@ function omega_js_alter(&$js) {
  * Implements hook_form_alter().
  */
 function omega_form_alter(&$form, &$form_state, $form_id) {
+  if (!empty($form['#attributes']['class']) && is_string($form['#attributes']['class'])) {
+    $form['#attributes']['class'] = explode(' ', $form['#attributes']['class']);
+  }
   // Duplicate the form ID as a class so we can reduce specificity in our CSS.
   $form['#attributes']['class'][] = drupal_clean_css_identifier($form['#id']);
 }

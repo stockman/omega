@@ -1,11 +1,7 @@
-
-<!-- the real stuff is here-->
 <div<?php print $attributes; ?>>
   <header class="l-header" role="banner">
-   <?php print render($page['navigation']); ?>
     <div class="l-branding">
-
-      <?php  if ($logo): ?>
+      <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       <?php endif; ?>
 
@@ -25,7 +21,7 @@
     </div>
 
     <?php print render($page['header']); ?>
-
+    <?php print render($page['navigation']); ?>
   </header>
 
   <div class="l-main">
@@ -56,4 +52,3 @@
     <?php print render($page['footer']); ?>
   </footer>
 </div>
-

@@ -20,7 +20,7 @@ $gutter-width: $horz-spacing-unit;
 $grid-padding: 10px;
 
 $container-style: magic;
-$container-width: 1920px;
+$container-width: 1100px;
 
 $tab: 44em;
 $desk: 70em;
@@ -35,7 +35,6 @@ $desk: 70em;
   margin-bottom: $vert-spacing-unit;
 }
 
-
 .l-off-canvas {
   clear: both;
 }
@@ -48,8 +47,6 @@ $desk: 70em;
   .l-footer {
     @include set-container-width;
   }
-.l-header {background-color: green /* !important; */
-} 
 
   .l-branding {
     @include span-columns(4, 12);

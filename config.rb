@@ -36,7 +36,7 @@ require 'sass-globbing'
 
 # You can select your preferred output style here (:expanded, :nested, :compact
 # or :compressed).
-output_style = :nested
+output_style = (environment == :production) ? :expanded : :nested
 
 # To enable relative paths to assets via compass helper functions. Since Drupal
 # themes can be installed in multiple locations, we don't need to worry about
@@ -44,7 +44,7 @@ output_style = :nested
 relative_assets = true
 
 # Conditionally enable line comments when in development mode.
-line_comments =  true
+line_comments = (environment == :production) ? false : true
 
 # Output debugging info in development mode.
-sass_options =  {:debug_info => true}
+sass_options = (environment == :production) ? {} : {:debug_info => true}
